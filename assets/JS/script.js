@@ -125,7 +125,7 @@ contactForm.addEventListener('submit', (e) => {
     }, 1500);
 });
 
-// Efeito de partículas no background (opcional)
+// Efeito de partículas no background 
 function createParticle() {
     const particle = document.createElement('div');
     particle.style.position = 'fixed';
@@ -203,7 +203,7 @@ document.querySelectorAll('.project-card').forEach(card => {
     });
 });
 
-// Cursor personalizado (opcional)
+// Cursor personalizado 
 const cursor = document.createElement('div');
 cursor.style.width = '20px';
 cursor.style.height = '20px';
@@ -228,7 +228,7 @@ if (window.innerWidth > 768) {
     document.body.style.cursor = 'none';
 }
 
-// Lazy loading para imagens (quando adicionadas)
+// Lazy loading para imagens (quando adicionadas )
 const imageObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
