@@ -268,7 +268,7 @@ window.addEventListener('load', () => {
     }
 });
 
-
+// Envio de formulário usando EmailJS
 document.getElementById("contact-form").addEventListener("submit", function(event) {
     event.preventDefault();
 
