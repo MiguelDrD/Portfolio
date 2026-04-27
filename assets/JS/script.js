@@ -269,7 +269,20 @@ window.addEventListener('load', () => {
 });
 
 
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
 
+    emailjs.sendForm(
+        "040723",
+        "template_cp2hzuh",
+        this
+    )
+    .then(function() {
+        alert("Mensagem enviada com sucesso!");
+    }, function(error) {
+        alert("Erro ao enviar: " + JSON.stringify(error));
+    });
+});
 
 
 

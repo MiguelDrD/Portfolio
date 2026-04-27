@@ -1,0 +1,25 @@
+{
+  "name": "portifolio",
+  "version": "1.0.0",
+  "description": "Bem-vindo ao repositório do meu portfólio pessoal! Este projeto foi desenvolvido para apresentar minhas habilidades, projetos e experiência como desenvolvedor, com um design moderno, responsivo e focado na experiência do usuário.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiguelDrD/Portifolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiguelDrD/Portifolio/issues"
+  },
+  "homepage": "https://github.com/MiguelDrD/Portifolio#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "nodemailer": "^8.0.7"
+  }
+}

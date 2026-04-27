@@ -394,8 +394,8 @@
                         </a>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
+                <form id="contact-form" class="contact-form" method="POST" action="/enviar">
+                    <div class="form-group" >
                         <input type="text" id="name" name="name" placeholder="Seu Nome" required>
                     </div>
                     <div class="form-group">
@@ -420,6 +420,13 @@
     </footer>
 
     <script src="assets/JS/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+    (function(){
+        emailjs.init("I3t9a0hG4pW6M33ub");
+    })();
+    </script>
 </body>
 </html>
 
