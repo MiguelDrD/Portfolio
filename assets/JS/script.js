@@ -102,28 +102,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Formulário de contato
 const contactForm = document.querySelector('.contact-form');
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Simular envio do formulário
-    const submitBtn = contactForm.querySelector('button[type="submit"]');
-    const originalText = submitBtn.textContent;
-    
-    submitBtn.textContent = 'Enviando...';
-    submitBtn.disabled = true;
-    
-    setTimeout(() => {
-        submitBtn.textContent = 'Mensagem Enviada!';
-        submitBtn.style.background = 'var(--accent-success)';
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        // Simular envio do formulário
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        
+        submitBtn.textContent = 'Enviando...';
+        submitBtn.disabled = true;
         
         setTimeout(() => {
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-            submitBtn.style.background = '';
-            contactForm.reset();
-        }, 2000);
-    }, 1500);
-});
+            submitBtn.textContent = 'Mensagem Enviada!';
+            submitBtn.style.background = 'var(--accent-success)';
+            
+            setTimeout(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+                submitBtn.style.background = '';
+                contactForm.reset();
+            }, 2000);
+        }, 1500);
+    });
+}
 
 // Efeito de partículas no background 
 function createParticle() {
